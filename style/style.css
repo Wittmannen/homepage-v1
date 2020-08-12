@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+  background-position-x: center;
+  background-size: cover;
+}
+
+body {
+  background: rgba(42, 54, 59, 0.8);
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 1fr 2fr 1fr 100px;
+  -ms-grid-columns: 1fr 4fr 2fr 1.5fr 1fr;
+      grid-template: 100px 1fr 2fr 1fr 100px / 1fr 4fr 2fr 1.5fr 1fr;
+  font-family: 'Roboto', sans-serif;
+  color: #e84a5f;
+  list-style-type: none;
+}
+
+body a {
+  color: #fecea8;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+body a:visited {
+  color: #fecea8;
+}
+
+body h1 {
+  font-size: 56pt;
+  font-weight: 900;
+}
+
+body h2 {
+  color: #ff847c;
+}
+
+body p {
+  color: #fecea8;
+}
+
+body #title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2 / 2;
+  font-size: 32pt;
+  font-weight: bolder;
+}
+
+body #title #date {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+body #bookmarks {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 2 / 3 / 4;
+  -ms-grid-rows: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template: 50% 50% / 50% 50%;
+}
+
+body #bookmarks h1 {
+  font-weight: bolder;
+  font-size: 24pt;
+  color: #e84a5f;
+  margin-bottom: 20px;
+}
+
+body #bookmarks #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #bookmarks #links ul {
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 100;
+  font-size: 12pt;
+}
+
+body #bookmarks #links ul .itemtitle {
+  font-size: 18pt;
+  font-weight: normal;
+  color: #e84a5f;
+}
+
+body #bookmarks #links ul li {
+  margin: 25px 0;
+}
+
+body #bookmarks #links ul li a {
+  color: #f15c49;
+}
+
+body #bookmarks #links ul li:nth-child(3) a {
+  color: #fb7432;
+}
+
+body #bookmarks #links ul li:nth-child(4) a {
+  color: #fe902e;
+}
+
+body #bookmarks #links ul li:nth-child(5) a {
+  color: #fdb53c;
+}
+
+body #bookmarks #links ul li:nth-child(6) a {
+  color: #fcca46;
+}
+
+body #weather {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: 2 / 3;
+  text-align: right;
+}
+
+body #weather #location {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24pt;
+  position: relative;
+}
+
+body #weather #location i {
+  font-size: 60pt;
+  position: absolute;
+  top: -15px;
+  right: 200px;
+}
+
+body #weather #stats h3 {
+  margin: -15px 0 10px 0;
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+body #weather #stats p {
+  margin: 5px 0;
+}
+
+body #eventlist {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: 2 / 4 / 4 / 4;
+  text-align: right;
+}
+
+body #eventlist #eventTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+body #eventlist > * {
+  float: right;
+  clear: both;
+}
+
+body #eventlist p {
+  color: #fecea8;
+  margin: 10px 0 20px 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Home</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style/reset.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/owfont-regular.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="title">
+			<div id="date"></div>
+			<h1>
+				WELCOME!
+			</h1>
+		</div>
+		<div id="bookmarks">
+			<h1>
+				BOOKMARKS
+			</h1>
+			<div id="links">
+				<ul>
+					<li class="itemtitle">Social</li>
+					<li><a href="https://twitter.com">Twitter</a></li>
+					<li><a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Read</li>
+					<li><a href="https://medium.com">Medium</a></li>
+					<li><a href="https://www.scribd.com/audiobooks">Scribd</a></li>
+					<li><a href="https://www.goodreads.com">Goodreads</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Work</li>
+					<li>
+						<a href="https://portal.Protranslating.com">Protranslating</a>
+					</li>
+					<li>
+						<a href="https://control.motionpoint.com">Translation Manager</a>
+					</li>
+					<li>
+						<a href="https://protranslating.freshdesk.com/support/home"
+							>Freshdesk</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://system.na1.netsuite.com/app/login/secure/enterpriselogin.nl?c=3684124&whence="
+							>Netsuite</a
+						>
+					</li>
+					<li>
+						<a href="https://account.box.com/login?redirect_url=%2F">Box</a>
+					</li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Personal</li>
+					<li><a href="https://drive.google.com/drive/my-drive">Drive</a></li>
+					<li><a href="https://app.milanote.com/">Milanote</a></li>
+					<li><a href="https://www.yr.no/place/Denmark/North_Jutland/Aalborg/">Weather</a></li>
+					<li><a href="http://192.168.1.66:8989">Sonarr</a></li>
+					<li><a href="http://192.168.1.66:8080">QBit</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Media</li>
+					<li><a href="https://www.youtube.com/">YouTube</a></li>
+					<li><a href="https://www.reddit.com/">Reddit</a></li>
+					<li><a href="https://www.twitch.tv/">Twitch</a></li>
+					<li><a href="https://www.netflix.com/browse">Netflix</a></li>
+					<li><a href="https://dk.hbonordic.com">HBO</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Opinions</li>
+					<li><a href="https://www.imdb.com">IMDb</a></li>
+					<li><a href="https://www.rottentomatoes.com">RottenTomatoes</a></li>
+					<li><a href="https://trakt.tv/dashboard">Trakt</a></li>
+					<li><a href="https://www.polygon.com">Polygon</a></li>
+					<li><a href="https://www.metacritic.com">Metacritic</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">Design</li>
+					<li><a href="https://www.artstation.com/">Artstation</a></li>
+					<li><a href="https://www.awwwards.com">Awwwards</a></li>
+					<li>
+						<a href="https://color.adobe.com/create/color-wheel/"
+							>Adobe Colour</a
+						>
+					</li>
+					<li><a href="https://www.palettable.io">Palettable</a></li>
+				</ul>
+				<ul>
+					<li class="itemtitle">School</li>
+					<!-- <li><a href="https://www.moodle.aau.dk/my/">Moodle</a></li> -->
+					<!-- <li><a href="https://sol-skemaer.aau.dk/">Sol</a></li> -->
+					<li><a href="http://www.timer-tab.com">Timer-tab</a></li>
+					<li><a href="https://codepip.com">Codepip</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="weather">
+			<h1 id="location"></h1>
+			<div id="stats"></div>
+		</div>
+		<div id="eventlist">
+			<h1 id="eventTitle">EVENTS</h1>
+			<ul id="events"></ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=[googleAPI]&callback=initMap"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,169 @@
+$c-bg: #2a363b;
+$c-h1: #e84a5f;
+$c-h2: #ff847c;
+$c-a: #fecea8;
+$c-p: #fecea8;
+
+$c-link1: #e84a5f;
+$c-link2: #f15c49;
+$c-link3: #fb7432;
+$c-link4: #fe902e;
+$c-link5: #fdb53c;
+$c-link6: #fcca46;
+
+html {
+	height: 100%;
+	background-position-x: center;
+	background-size: cover;
+}
+
+body {
+	background: rgba($c-bg, 0.8);
+	height: 100%;
+	display: grid;
+	grid-template: 100px 1fr 2fr 1fr 100px / 1fr 4fr 2fr 1.5fr 1fr;
+	font-family: 'Roboto', sans-serif;
+	color: $c-h1;
+	list-style-type: none;
+
+	a {
+		color: $c-a;
+		text-decoration: none;
+		font-weight: 300;
+
+		&:visited {
+			color: $c-a;
+		}
+	}
+
+	h1 {
+		font-size: 56pt;
+		font-weight: 900;
+	}
+
+	h2 {
+		color: $c-h2;
+	}
+
+	p {
+		color: $c-p;
+	}
+
+	#title {
+		grid-area: 2 / 2;
+		font-size: 32pt;
+		font-weight: bolder;
+
+		#date {
+			font-size: 16pt;
+			font-weight: bold;
+		}
+	}
+
+	#bookmarks {
+		grid-area: 3 / 2 / 3 / 4;
+		grid-template: 50% 50% / 50% 50%;
+
+		h1 {
+			font-weight: bolder;
+			font-size: 24pt;
+			color: $c-h1;
+			margin-bottom: 20px;
+		}
+
+		#links {
+			display: flex;
+			justify-content: space-between;
+
+			ul {
+				display: inline-block;
+				vertical-align: top;
+				font-weight: 100;
+				font-size: 12pt;
+
+				.itemtitle {
+					font-size: 18pt;
+					font-weight: normal;
+					color: $c-link1;
+				}
+
+				li {
+					margin: 25px 0;
+
+					a {
+						color: $c-link2;
+					}
+
+					&:nth-child(3) a {
+						color: $c-link3;
+					}
+
+					&:nth-child(4) a {
+						color: $c-link4;
+					}
+
+					&:nth-child(5) a {
+						color: $c-link5;
+					}
+
+					&:nth-child(6) a {
+						color: $c-link6;
+					}
+				}
+			}
+		}
+	}
+
+	#weather {
+		grid-area: 2 / 3;
+		text-align: right;
+
+		#location {
+			margin-bottom: 20px;
+			font-weight: bold;
+			font-size: 24pt;
+			position: relative;
+
+			i {
+				font-size: 60pt;
+				position: absolute;
+				top: -15px;
+				right: 200px;
+			}
+		}
+
+		#stats {
+			h3 {
+				margin: -15px 0 10px 0;
+				font-size: 14pt;
+				font-weight: bold;
+				text-transform: capitalize;
+			}
+
+			p {
+				margin: 5px 0;
+			}
+		}
+	}
+
+	#eventlist {
+		grid-area: 2 / 4 / 4 / 4;
+		text-align: right;
+
+		#eventTitle {
+			margin-bottom: 20px;
+			font-weight: bold;
+			font-size: 24pt;
+		}
+
+		& > * {
+			float: right;
+			clear: both;
+		}
+
+		p {
+			color: $c-p;
+			margin: 10px 0 20px 0;
+		}
+	}
+}
